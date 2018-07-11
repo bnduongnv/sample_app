@@ -2,6 +2,10 @@ en:
   back: "Back"
   en_title: "Ruby on Rails Tutorial"
   not_found: "không tìm thấy tài khoản!"
+  update_message: "Profile updated"
+  delete_mesage_success: "User deleted"
+  delete_mesage_failed: "User delete failed"
+  login_message: "Please log in."
   static_pages:
     home:
       title: "Home"
@@ -55,12 +59,24 @@ en:
     application:
   users:
     title_sample: "Welcome to the Sample App!"
+    index:
+      title: "All user"
+    user:
+      delete: "delete"
+      del_confirm: "You sure?"
     new:
       error: "error "
+      sign_up: "Sign up"
+      button_text: "Sign up"
       form_container: "The form contains "
-      sign_up: "Sign up "
       content_sigup: "This will be a signup page for new users. "
-      create: "Create my account"
+    edit:
+      title: "Edit user"
+      button_text: "Save changes"
+      content: "Update your profile"
+      link_change: "Change"
+    form:
+      create: "Comfirm"
       name: "Name"
       email: "Email"
       password: "Password"
