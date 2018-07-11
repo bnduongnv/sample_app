@@ -2,7 +2,6 @@ vi:
   back: "Trở lại"
   en_title: "Hướng dẫn Ruby on Rails"
   not_found: "không tìm thấy tài khoản!"
-  email: "thư "
   activerecord:
     errors:
       models:
@@ -13,9 +12,12 @@ vi:
             email:
               blank: " không được để trống"
               invalid: " không hợp lệ"
+              taken: " này đã được sử dụng"
             password:
               blank: " không được để trống"
               too_short: " quá ngắn (tối thiểu 6 ký tự)"
+            password_confirmation:
+              confirmation: " mật khẩu không khớp "
   static_pages:
     home:
       title: "Trang chủ"
@@ -88,6 +90,7 @@ vi:
       title: "Đăng nhập"
       email: "Email"
       password: "Mật khẩu"
+      remember_me: "Nhớ tôi trên máy tính này"
       sign_up: "Đăng ký ngay!"
       new_user: "Người dùng mới ?"
     create:

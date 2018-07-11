@@ -6,7 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t(".title_sample")
+      log_in @user
+      flash[:success] = t ".title_sample"
       redirect_to @user
     else
       render :new
@@ -17,11 +18,12 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
 
     return if @user
-    flash[:danger] = t("not_found")
+    flash[:danger] = t "not_found"
     redirect_to root_path
   end
 
   private
+
   def user_params
     params.require(:user)
           .permit :name, :email, :password, :password_confirmation

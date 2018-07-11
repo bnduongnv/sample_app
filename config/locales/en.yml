@@ -74,6 +74,7 @@ en:
       title: "Log in"
       email: "Email"
       password: "Password"
+      remember_me: "Remember me on this computer"
       sign_up: "Sign up now!"
       new_user: "New user ?"
     create:
