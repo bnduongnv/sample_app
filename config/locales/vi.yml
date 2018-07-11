@@ -6,6 +6,12 @@ vi:
   delete_mesage_success: "Người dùng đã xóa"
   delete_mesage_failed: "Người dùng chưa được xóa"
   login_message: "Làm ơn hay đăng nhập."
+  account_activation: "Kích hoạt tài khoản"
+  account_activated: "Tài khoản đã được kích hoạt!"
+  account_activate_invalid: "Đường dẫn kích hoạt không đúng"
+  activation_message1: "Tài khoản chưa được kích hoạt. "
+  activation_message2: "Kiểm trai thư của bạn để có thể kích hoạt."
+  activation_mesage: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản của bạn."
   will_paginate:
     next_label: "Sau"
     previous_label: "Trước"
@@ -114,3 +120,9 @@ vi:
       new_user: "Người dùng mới ?"
     create:
       error_login: "Email không tồn tại/mật khẩu sai"
+  user_mailer:
+    account_activation:
+      title: "Ứng dụng mẫu"
+      hi: "Chào "
+      welcome: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      active: "Kích hoạt"
