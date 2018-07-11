@@ -6,13 +6,14 @@
   <%= t ".content_end_sample" %>
 </p>
 <b>
-  <%= link_to "English", locale:"en" %> ||
-  <%= link_to "Vietnamese", locale:"vi" %>
+  <%= link_to t("en_language"), locale:"en" %> ||
+  <%= link_to t("vi_language"), locale:"vi" %>
   </br>
 </b>
 <b>
   </br>
-  <%= link_to "About", "/static_pages/about" %> ||
-  <%= link_to "Contact", "/static_pages/contact" %> ||
-  <%= link_to "Help", "/static_pages/help" %>
+  <%= link_to t("home"), home_path %> ||
+  <%= link_to t("about"), about_path %> ||
+  <%= link_to t("contact"), contact_path %> ||
+  <%= link_to t("help"), help_path %>
 </b>
