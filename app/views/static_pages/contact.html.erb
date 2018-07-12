@@ -1,0 +1,15 @@
+<% provide :title, t(".title_contact") %>
+<h1><%= t ".title_contact" %></h1>
+<p>
+  <%= t ".content_contact" %>
+  <a href="http://www.railstutorial.org/contact"><%= t ".link_name_contact" %></a>.
+</p>
+<b>
+  <%= link_to "English", locale:"en" %> ||
+  <%= link_to "Vietnamese", locale:"vi" %>
+</b>
+<b>
+  </br>
+  </br>
+  <%= link_to "Back", "/" %>
+</b>

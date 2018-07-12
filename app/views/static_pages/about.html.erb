@@ -1,0 +1,19 @@
+<% provide :title, t(".title_about") %>
+<h1><%= t ".title_about" %></h1>
+<p>
+  <%= t ".content_about_1" %><a href="http://www.railstutorial.org/"><em><%= t ".link_name_about" %></em></a><%= t ".content_about_2" %>
+  <a href="http://www.railstutorial.org/book"><%= t ".link_name_about_1" %></a><%= t ".content_about_3" %>
+  <a href="http://screencasts.railstutorial.org/"><%= t ".link_name_about_2" %></a>
+  <%= t ".content_about_4" %>
+  <a href="http://rubyonrails.org/"><%= t ".link_name_about_3" %></a>.
+    <%= t ".content_about_end" %>
+</p>
+<b>
+  <%= link_to "English", locale:"en" %> ||
+  <%= link_to "Vietnamese", locale:"vi" %>
+ </b>
+<b>
+  </br>
+  </br>
+  <%= link_to "Back", "/" %>
+</b>
