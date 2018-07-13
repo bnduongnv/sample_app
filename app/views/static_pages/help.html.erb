@@ -2,17 +2,16 @@
 <h1><%= t ".title_help" %></h1>
 <p>
   <%= t ".content_help_1" %>
-  <a href="http://www.railstutorial.org/help"><%= t ".link_name_help" %></a>.
+  <a href="http://www.railstutorial.org/help">
+    <%= t ".link_name_help" %>
+  </a>.
   <%= t ".content_help_2" %>
-  <a href="http://www.railstutorial.org/book"><em><%= t ".link_name_help_1" %></em></a>.
+  <a href="http://www.railstutorial.org/book">
+    <em><%= t ".link_name_help_1" %></em>
+  </a>.
 </p>
 <b>
-  <%= link_to t("en_language"), locale:"en" %> ||
-  <%= link_to t("vi_language"), locale:"vi" %>
-  </br>
-</b>
-<b>
   </br>
   </br>
-  <%= link_to t("back"), home_path %>
+  <%= link_to t("back"), root_path %>
 </b>

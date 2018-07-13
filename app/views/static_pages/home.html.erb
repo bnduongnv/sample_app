@@ -1,19 +1,15 @@
 <% provide :title, t(".title") %>
-<h1><%= t ".title_sample" %></h1>
-<p>
-  <%= t ".content_sample" %>
-  <a href="http://www.railstutorial.org/"><%= t ".link_name_sample" %></a>
-  <%= t ".content_end_sample" %>
-</p>
-<b>
-  <%= link_to t("en_language"), locale:"en" %> ||
-  <%= link_to t("vi_language"), locale:"vi" %>
-  </br>
-</b>
-<b>
-  </br>
-  <%= link_to t("home"), home_path %> ||
-  <%= link_to t("about"), about_path %> ||
-  <%= link_to t("contact"), contact_path %> ||
-  <%= link_to t("help"), help_path %>
-</b>
+<div class="center jumbotron">
+  <h1><%= t ".title_sample" %></h1>
+  <h2>
+    <%= t ".content_sample" %>
+    <a href="http://www.railstutorial.org/">
+      <%= t ".link_name_sample" %>
+    </a>
+    <%= t ".content_end_sample" %>
+  </h2>
+  <%= link_to t(".sign_up"), sigup_path,
+  class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+'http://rubyonrails.org/' %>
