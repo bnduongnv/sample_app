@@ -5,11 +5,12 @@
   <a href="http://www.railstutorial.org/contact"><%= t ".link_name_contact" %></a>.
 </p>
 <b>
-  <%= link_to "English", locale:"en" %> ||
-  <%= link_to "Vietnamese", locale:"vi" %>
+  <%= link_to t("en_language"), locale:"en" %> ||
+  <%= link_to t("vi_language"), locale:"vi" %>
+  </br>
 </b>
 <b>
   </br>
   </br>
-  <%= link_to "Back", "/" %>
+  <%= link_to t("back"), home_path %>
 </b>

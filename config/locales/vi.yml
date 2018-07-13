@@ -1,4 +1,11 @@
 vi:
+    en_language: "Tiếng Anh"
+    vi_language: "Tiếng Việt"
+    home: "Trang chủ"
+    about: "Giới thiệu"
+    contact: "Liên hệ"
+    help: "Trợ giúp"
+    back: "Trở lại"
     en_title: "Hướng dẫn Ruby on Rails"
     static_pages:
       home:

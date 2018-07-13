@@ -1,4 +1,11 @@
 en:
+  en_language: "English"
+  vi_language: "Vietnamese"
+  home: "Home"
+  about: "About"
+  contact: "Contact"
+  help: "Help"
+  back: "Back"
   en_title: "Ruby on Rails Tutorial"
   static_pages:
       home:
