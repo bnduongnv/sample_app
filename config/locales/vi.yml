@@ -1,37 +1,53 @@
 vi:
-    en_language: "Tiếng Anh"
-    vi_language: "Tiếng Việt"
-    home: "Trang chủ"
-    about: "Giới thiệu"
-    contact: "Liên hệ"
-    help: "Trợ giúp"
-    back: "Trở lại"
-    en_title: "Hướng dẫn Ruby on Rails"
-    static_pages:
-      home:
-        title: "Trang chủ"
-        title_sample: "Ứng dụng mẫu"
-        content_sample: "Đây là trang chủ của trang "
-        link_name_sample: "Ruby on Rails Tutorial "
-        content_end_sample: "ứng dụng mẫu. "
-      about:
-        title_about: "Giới thiệu"
-        content_about_1: "Quyển "
-        link_name_about: "Ruby on Rails Tutorial "
-        content_about_2: "là một "
-        link_name_about_1: "cuốn sách "
-        content_about_3: "và "
-        link_name_about_2: "screencast series "
-        content_about_4: "để dạy phát triển web với "
-        link_name_about_3: "Ruby on Rails"
-        content_about_end: "Đây là ứng dụng mẫu cho hướng dẫn. "
-      help:
-        title_help: "Trợ giúp"
-        content_help_1: "Nhận trợ giúp từ Ruby on Rails Tutorial tại "
-        link_name_help: "phần trợ giúp Rails Tutorial "
-        content_help_2: "Để nhận sự trợ giúp từ mẫu ứng dụng, hãy xem qua "
-        link_name_help_1: "cuốn sách Hướng dẫn Ruby on Rails. "
-      contact:
-        title_contact: "Liên Hệ"
-        content_contact: "Liên hệ với Ruby on Rails Tutorial về mẫu ứng dụng tại "
-        link_name_contact: "trang liên hệ"
+  back: "Trở lại"
+  en_title: "Hướng dẫn Ruby on Rails"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      title_sample: "Chào mừng đến với Ứng dụng mẫu"
+      content_sample: "Đây là trang chủ của trang "
+      link_name_sample: "Hướng dẫn Ruby on Rails "
+      content_end_sample: "ứng dụng mẫu. "
+      sign_up: "Đăng ký ngay!"
+    about:
+      title_about: "Giới thiệu"
+      content_about_1: "Quyển "
+      link_name_about: "Ruby on Rails Tutorial "
+      content_about_2: "là một "
+      link_name_about_1: "cuốn sách "
+      content_about_3: "và "
+      link_name_about_2: "screencast series "
+      content_about_4: "để dạy phát triển web với "
+      link_name_about_3: "Ruby on Rails"
+      content_about_end: "Đây là ứng dụng mẫu cho hướng dẫn. "
+    help:
+      title_help: "Trợ giúp"
+      content_help_1: "Nhận trợ giúp từ Ruby on Rails Tutorial tại "
+      link_name_help: "phần trợ giúp Rails Tutorial "
+      content_help_2: "Để nhận sự trợ giúp từ mẫu ứng dụng, hãy xem qua "
+      link_name_help_1: "cuốn sách Hướng dẫn Ruby on Rails. "
+    contact:
+      title_contact: "Liên hệ"
+      content_contact: "Liên hệ với Ruby on Rails Tutorial về mẫu ứng dụng tại "
+      link_name_contact: "trang liên hệ"
+  layouts:
+    header:
+      en_language: "Tiếng Anh"
+      vi_language: "Tiếng Việt"
+      title: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+    footer:
+      new: "Tin tức"
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      content_footer_1: "Tài liệu "
+      link_name_footer: "Hướng dẫn Ruby on Rails "
+      content_footer_2: " này được làm bởi "
+      link_name_footer_end: "Michael Hartl "
+    application:
+  users:
+    new:
+      sign_up: "Đăng ký"
+      content_sigup: "Trang này sẽ là trang đăng ký cho 1 tài khoản mới ."

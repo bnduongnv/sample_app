@@ -2,15 +2,12 @@
 <h1><%= t ".title_contact" %></h1>
 <p>
   <%= t ".content_contact" %>
-  <a href="http://www.railstutorial.org/contact"><%= t ".link_name_contact" %></a>.
+  <a href="http://www.railstutorial.org/contact">
+    <%= t ".link_name_contact" %>
+  </a>.
 </p>
 <b>
-  <%= link_to t("en_language"), locale:"en" %> ||
-  <%= link_to t("vi_language"), locale:"vi" %>
-  </br>
-</b>
-<b>
   </br>
   </br>
-  <%= link_to t("back"), home_path %>
+  <%= link_to t("back"), root_path %>
 </b>
