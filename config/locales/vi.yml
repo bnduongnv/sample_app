@@ -1,6 +1,7 @@
 vi:
   back: "Trở lại"
   en_title: "Hướng dẫn Ruby on Rails"
+  not_found: "không tìm thấy tài khoản!"
   static_pages:
     home:
       title: "Trang chủ"
@@ -48,6 +49,18 @@ vi:
       link_name_footer_end: "Michael Hartl "
     application:
   users:
+    title_sample: "Chào mừng đến với Ứng dụng mẫu!"
     new:
+      error: "lỗi "
+      form_container: "Biểu mẫu có chứa "
       sign_up: "Đăng ký"
       content_sigup: "Trang này sẽ là trang đăng ký cho 1 tài khoản mới ."
+      create: "Tạo tài khoản của tôi"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
+  shared:
+    error_messages:
+      error: "lỗi"
+      form_container: "Biểu mẫu có chứa "
