@@ -39,6 +39,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      account: "Account "
+      user: "Users"
+      logout: "Log out"
+      profile: "Profile"
+      settings: "Settings"
     footer:
       new: "News"
       about: "About"
@@ -64,3 +69,12 @@ en:
     error_messages:
       error: "error"
       form_container: "The form contains "
+  sessions:
+    new:
+      title: "Log in"
+      email: "Email"
+      password: "Password"
+      sign_up: "Sign up now!"
+      new_user: "New user ?"
+    create:
+      error_login: "Invalid email/password combination"

@@ -2,6 +2,20 @@ vi:
   back: "Trở lại"
   en_title: "Hướng dẫn Ruby on Rails"
   not_found: "không tìm thấy tài khoản!"
+  email: "thư "
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: " không được để trống"
+            email:
+              blank: " không được để trống"
+              invalid: " không hợp lệ"
+            password:
+              blank: " không được để trống"
+              too_short: " quá ngắn (tối thiểu 6 ký tự)"
   static_pages:
     home:
       title: "Trang chủ"
@@ -39,6 +53,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      account: "Tài khoản "
+      user: "Người dùng"
+      logout: "Đăng xuất"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
     footer:
       new: "Tin tức"
       about: "Giới thiệu"
@@ -64,3 +83,12 @@ vi:
     error_messages:
       error: "lỗi"
       form_container: "Biểu mẫu có chứa "
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      sign_up: "Đăng ký ngay!"
+      new_user: "Người dùng mới ?"
+    create:
+      error_login: "Email không tồn tại/mật khẩu sai"
