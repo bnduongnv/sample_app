@@ -2,6 +2,13 @@ vi:
   back: "Trở lại"
   en_title: "Hướng dẫn Ruby on Rails"
   not_found: "không tìm thấy tài khoản!"
+  update_mesage: "Hồ sơ đã được cập nhật"
+  delete_mesage_success: "Người dùng đã xóa"
+  delete_mesage_failed: "Người dùng chưa được xóa"
+  login_message: "Làm ơn hay đăng nhập."
+  will_paginate:
+    next_label: "Sau"
+    previous_label: "Trước"
   activerecord:
     errors:
       models:
@@ -71,14 +78,26 @@ vi:
     application:
   users:
     title_sample: "Chào mừng đến với Ứng dụng mẫu!"
+    index:
+      title: "Tất cả người dùng"
+    user:
+      delete: "xóa"
+      del_confirm: "Bạn có chắc không ?"
     new:
       error: "lỗi "
-      form_container: "Biểu mẫu có chứa "
       sign_up: "Đăng ký"
+      button_text: "Đăng ký"
+      form_container: "Biểu mẫu có chứa "
       content_sigup: "Trang này sẽ là trang đăng ký cho 1 tài khoản mới ."
-      create: "Tạo tài khoản của tôi"
+    edit:
+      title: "Sửa người dùng"
+      button_text: "Lưu thay đổi"
+      content: "Cập nhật hồ sơ của bạn"
+      link_change: "Thay đổi"
+    form:
+      create: "Xác nhận"
       name: "Tên"
-      email: "Email"
+      email: "Thư"
       password: "Mật khẩu"
       confirmation: "Xác nhận lại mật khẩu"
   shared:
