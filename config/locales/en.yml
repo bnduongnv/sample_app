@@ -6,6 +6,12 @@ en:
   delete_mesage_success: "User deleted"
   delete_mesage_failed: "User delete failed"
   login_message: "Please log in."
+  account_activation: "Account activation"
+  account_activated: "Account activated!"
+  account_activate_invalid: "Invalid activation link"
+  activation_message1: "Account not activated. "
+  activation_message2: "Check your email for the activation link."
+  activation_mesage: "Please check your email to activate your account."
   static_pages:
     home:
       title: "Home"
@@ -95,3 +101,10 @@ en:
       new_user: "New user ?"
     create:
       error_login: "Invalid email/password combination"
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Hi "
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+
