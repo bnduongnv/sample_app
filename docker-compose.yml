@@ -1,0 +1,79 @@
+version: '3.8'
+networks:
+  development:
+  test:
+volumes:
+  db_data:
+  gem_cache:
+  shared_data:
+services:
+  db:
+    image: postgres:12.5-alpine
+    container_name: sample_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - shared_data:/var/shared
+    networks:
+      - development
+      - test
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5099:5432
+  app:
+    image: sample_app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: dev_sample_app
+    volumes:
+      - .:/var/app
+      - shared_data:/var/shared
+      - gem_cache:/usr/local/bundle/gems
+    networks:
+      - development
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
+    env_file: .env.development
+    entrypoint: dev-entrypoint.sh
+    command: ["rails", "s", "-p", "3000", "-b", "0.0.0.0"]
+    environment:
+      RAILS_ENV: development
+    depends_on:
+      - db
+  test:
+    image: sample_app
+    container_name: test_sample_app
+    volumes:
+      - .:/var/app
+      - shared_data:/var/shared
+      - gem_cache:/usr/local/bundle/gems
+    networks:
+      - test
+    ports:
+      - 3001:3000
+    stdin_open: true
+    tty: true
+    env_file: .env.test
+    entrypoint: test-entrypoint.sh
+    command: ["rails", "-v"]
+    environment:
+      RAILS_ENV: test
+    depends_on:
+      - db
+# Step 1:
+# docker-compose build && docker-compose up
+# docker-compose run -rm sample_app rails db:create
+# docker-compose run -rm sample_app rails db:migrate
+
+# Go to postgres
+# docker-compose exec sample_app sh
+# psql -U postgres
+# \l
+
+# debug
+# docker-compose up
+# docker attach web
